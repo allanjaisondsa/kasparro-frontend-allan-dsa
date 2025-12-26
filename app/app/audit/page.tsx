@@ -1,3 +1,5 @@
+"use client"
+
 import AuditSidebar from "@/components/audit/AuditSidebar"
 import AuditPanel from "@/components/audit/auditpanel"
 

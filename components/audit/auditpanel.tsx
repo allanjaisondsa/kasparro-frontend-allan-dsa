@@ -1,3 +1,5 @@
+"use client"
+
 import modules from "@/data/audit-modules.json"
 import { useAppStore } from "@/lib/store"
 
