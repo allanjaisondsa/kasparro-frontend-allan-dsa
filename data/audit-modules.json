@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ai_visibility",
+    "name": "AI Visibility",
+    "score": 78,
+    "insights": ["Strong presence in ChatGPT responses"],
+    "issues": ["Low citation depth"],
+    "recommendations": ["Increase authoritative mentions"]
+  },
+  {
+    "id": "eeat",
+    "name": "Trust / EEAT",
+    "score": 64,
+    "insights": ["Founder authority detected"],
+    "issues": ["Limited third-party validation"],
+    "recommendations": ["Add expert citations"]
+  }
+]

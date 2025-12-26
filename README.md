@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kasparro – Frontend Engineering Assignment (V1)
 
-## Getting Started
+This repository contains a V1 frontend implementation for **Kasparro**, an
+AI-native SEO & Brand Intelligence platform designed for the AI-first search era
+(ChatGPT, Gemini, Perplexity, etc.).
 
-First, run the development server:
+The goal of this assignment was **not visual polish**, but to demonstrate:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- System-level frontend thinking
+- Clear component boundaries
+- Structured data modeling
+- UX clarity for a complex AI product
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Public Website
+Routes:
+- `/` — Home (product narrative)
+- `/platform` — Product overview
+- `/about` — Mission & philosophy
 
-## Learn More
+Purpose:
+Explain **what Kasparro does**, **why AI-SEO is different**, and **how the system works**
+in under 10 seconds.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Product Dashboard (Mocked)
+Routes:
+- `/app/dashboard` — Brand snapshot
+- `/app/audit` — Core audit experience
+- `/app/architecture` — System overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Purpose:
+Demonstrate how an authenticated Kasparro user would interact with
+AI-SEO audit data in a structured, scalable UI.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏗️ Architecture Overview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The frontend is structured around **systems, not pages**.
+
+```txt
+src/
+├── app/               # Route definitions (Next.js App Router)
+├── components/        # Feature + layout components
+├── data/              # Structured mocked JSON data
+├── lib/               # Types & state management
